@@ -1,0 +1,19 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.6.21'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    implementation 'io.helidon.webserver:helidon-webserver:3.0.1'
+    implementation 'io.helidon.security:helidon-security:3.0.1'
+    implementation 'io.helidon.security.providers:helidon-security-providers-jwt:3.0.1'
+    implementation 'io.helidon.config:helidon-config-yaml:3.0.1'
+    implementation 'io.helidon.security.integration:helidon-security-integration-webserver:3.0.1'
+}
